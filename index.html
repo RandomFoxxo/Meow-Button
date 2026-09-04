@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="counter">
+            <h2 id="meowCounter">
+                Meow Counter: 0
+            </h2>
+
+            <h2 id="woofCounter">
+                Woof Counter: 0
+            </h2>
+        </div>
+
+        <div class="animalButtons">
+            <button class="clicker" id="clicker" onclick="meowAction()">
+                <img class="meow photo" src="https://www.pngkey.com/png/full/152-1527427_cat-silhouette-outline-cat-silhouette-vector-png.png">
+            </button>
+
+            <button class="clicker" id="clicker" onclick="woofAction()">
+                <img class="woof photo" src="https://static.vecteezy.com/system/resources/thumbnails/054/064/792/small/dog-silhouette-isolated-png.png">
+            </button>
+        </div>
+
+        <button class="settingsButton" id="settingsButton">
+            <img class="settingsButtonImage" src="https://www.freeiconspng.com/uploads/settings-icon-6.png">
+        </button>
+
+        <div class="settingsTab" id="settingsTab">
+            <details id="colorMenu">
+                <summary>Change Background: </summary>
+                <button class="black">black</button>
+                <button class="pink">Pink</button>
+                <button class="blue">Blue</button>
+                <button class="green">Green</button>
+                <button class="yellow">Yellow</button>
+                <button class="red">Red</button>
+            </details>
+
+            <button class="resetBtn" onclick="resetAllCounters()">⚠️Reset All Counters⚠️</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
